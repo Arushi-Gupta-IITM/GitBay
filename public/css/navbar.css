@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #1a1a1a !important;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar a img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links a {
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.navbar-links a i {
+    font-size: 1rem;
+}
+
+

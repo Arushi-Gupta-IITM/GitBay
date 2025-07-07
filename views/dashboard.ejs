@@ -1,0 +1,89 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="dashboard-container">
+        <div class="your-repo">
+            <h3>All Repositories</h3>
+            <ul>
+                <% if (allRepo && allRepo.length > 0) { %>
+                <% allRepo.forEach(repo => { %>
+                    <li>
+                    <strong><%= repo.name %></strong><br>
+                    <small><%= repo.description %></small>
+                    </li>
+                <% }) %>
+                <% } else { %>
+                <li>No repositories found.</li>
+                <% } %>
+            </ul>
+        </div>
+
+        <div class="your-repo">
+            <h3>Your Repositories</h3>
+            <ul>
+                <% if (userRepo && userRepo.length > 0) { %>
+                <% userRepo.forEach(repo => { %>
+                    <li>
+                    <strong><%= repo.name %></strong><br>
+                    <small><%= repo.description %></small>
+                    </li>
+                <% }) %>
+                <% } else { %>
+                <li>No repositories found.</li>
+                <% } %>
+            </ul>
+        </div>
+
+        <div class="events">
+            <h3>Upcoming Events</h3>
+            <br>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Data Hackfest
+                    <span class="badge text-bg-primary rounded-pill">27 Dec, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Odoo Hackathon 2025
+                    <span class="badge text-bg-primary rounded-pill">19 Oct, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Deb Conf25
+                    <span class="badge text-bg-primary rounded-pill">15 Nov, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Virtual AI & NLP Sprint
+                    <span class="badge text-bg-primary rounded-pill">1 Aug, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Kanpur CodeFest
+                    <span class="badge text-bg-primary rounded-pill">15 Aug, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Summer Web Dev Jam
+                    <span class="badge text-bg-primary rounded-pill">25 Aug, 2025</span>
+                </li> 
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Global Open‑Source Contribution Week
+                    <span class="badge text-bg-primary rounded-pill">10 Sep, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Python ML Challenge
+                    <span class="badge text-bg-primary rounded-pill">15 Sep, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Blockchain Builders Hackathon
+                    <span class="badge text-bg-primary rounded-pill">18 Oct, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Secure Code Sprint
+                    <span class="badge text-bg-primary rounded-pill">7 Nov, 2025</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Infrastructure as Code (IaC) Challenge
+                    <span class="badge text-bg-primary rounded-pill">5 Dec, 2025</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,15 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.newRepo-container {
+    margin: 2rem 0;
+    color: white;
+}
+
+.newRepo-container form .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

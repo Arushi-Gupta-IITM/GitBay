@@ -1,0 +1,34 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="profile-container">
+        <img src="/images/GitBay_Avatar.webp">
+        <h1>@<%= user.username %></h1>
+        <h2>Email Address: <i><%= user.email %></i></h2>
+        <div class="your-repo">
+            <h3>Your Repositories</h3>
+            <ul>
+                <% if (userRepo && userRepo.length > 0) { %>
+                <% userRepo.forEach(repo => { %>
+                    <li>
+                    <strong><%= repo.name %></strong><br>
+                    <small><%= repo.description %></small>
+                    </li>
+                <% }) %>
+                <% } else { %>
+                <li>No repositories found.</li>
+                <% } %>
+            </ul>
+        </div>
+        <div class="heatmap-section">
+            <h3>Recent Activity</h3>
+            <div class="heatmap-grid">
+                <% for (let i = 0; i < 30; i++) { %>
+                <div class="heatmap-cell activity-<%= Math.floor(Math.random() * 5) %>"></div>
+                <% } %>
+            </div>
+            <small style="color: #8b949e;">Past 30 days</small>
+        </div>
+
+    </div>
+</body>

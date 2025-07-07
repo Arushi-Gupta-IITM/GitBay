@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="newRepo-container">
+    <h2>Create a new repository</h2>
+
+    <form method="POST" action="/repo/create">
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="repoName" class="form-label">Name:</label>
+                <input type="text" name="name" class="form-control" id="repoName" placeholder="Enter a name for your new repository">
+            </div>
+        </div>
+
+         <div class="mb-3">
+            <label for="repoDesc" class="form-label">Description:</label>
+            <textarea class="form-control" name="description"id="repoDesc" placeholder="Enter a small description for your repository."></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="visibility" class="form-label">Visibility:</label> 
+            <select class="form-select mb-3" aria-label="Default select example" id="visibility" name="visibility" >
+                <option selected value="">Open this select menu</option>
+                <option value="Public">Public</option>
+                <option value="Private">Private</option>
+            </select>
+        </div>
+
+        <div class="mb-3 issues">
+            <div class="mb-3 col-6">
+                <label for="issueTitle" class="form-label">Issue Title (optional):</label>
+                <input type="text" class="form-control" id="issueTitle" name="issueTitle" placeholder="e.g. Fix README">
+            </div>
+
+            <div class="mb-3">
+                <label for="issueDesc" class="form-label">Issue Description (optional):</label>
+                <textarea class="form-control" id="issueDesc" name="issueDesc" placeholder="Describe the issue here..."></textarea>
+            </div>
+        </div>                  
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+

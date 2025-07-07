@@ -1,0 +1,28 @@
+body {
+    background-color: 	#0d1117;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home-container {
+    margin: 5rem 20rem 0 20rem;
+}
+
+.home-container img {
+    height: 12rem;
+    width: 12rem;
+    margin-left: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.home-container h1, h3 {
+    margin-top: 2rem;
+}
+
+.home-container a button {
+    margin-left: 20rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+

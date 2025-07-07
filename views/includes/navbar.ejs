@@ -1,0 +1,31 @@
+<script>
+
+</script>
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="/dashboard/<%= username %>">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitBay_logo">
+        <span>Dashboard</span>
+    </a>
+
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+
+    <div class="navbar-links">
+      <a href="/repo/create">
+        <i class="fa-solid fa-plus"> &nbsp;New Repo</i>
+      </a>
+      <a href="/user/userProfile/<%= userId %>">
+        <img src="/images/navbar_avatar.avif">
+      </a>
+      <form action="/user/logout" method="GET" style="margin-left: 1rem;">
+        <button type="submit" class="btn btn-danger"><b>Logout</b></button>
+     </form>
+    </div>
+    
+  </div>
+</nav>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitBay</title>
+    <link rel="icon" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    <form action="/user/login" method="POST" novalidate class="needs-validation">
+        <div class="auth-container">
+
+            <p>LogIn to GitBay</p>
+            <br>
+
+            <div class="email">
+                <label for="email" class="form-label input-label">Email Id:</label>
+                <input type="text" id="email" name="email" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Email should be valid!</div>
+            </div>
+
+            <div class="password">
+                <label for="password" class="form-label input-label">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Password should be valid</div>
+            </div>
+
+            <button class="btn btn-success">LogIn</button>
+            <br> <br>
+            <a href="/signup">New to GitBay, SignUp</a>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/inputValidations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+const fs = require("fs").promises;
+const path = require("path");
+
+async function addRepo(filePath) {
+   const repoPath = path.resolve(process.cwd(), ".bayGit");
+   const stagingPath = path.join(repoPath, "staging");
+
+   try {
+        await fs.mkdir(stagingPath, {recursive: true});
+        let fileName = path.basename(filePath);
+        await fs.copyFile(filePath, path.join(stagingPath, fileName));
+        console.log(`File ${fileName} added to the staging area.`);
+   } catch(err) {
+        console.error("Error adding file :", err);
+   }
+}
+
+module.exports = addRepo;

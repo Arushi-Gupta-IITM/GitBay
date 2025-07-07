@@ -1,0 +1,29 @@
+body {
+    background-color: #161b22; 
+}
+
+.auth-container {
+    /* height: 30rem; */   
+    background-color: #0d1117;
+    width: 30rem;
+    padding: 1rem 3rem ;
+    border: 0.2rem solid white;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 7rem;
+    margin-left: 30rem;
+}
+
+.auth-container div {
+    margin-bottom: 1.2rem;
+}
+
+.auth-container p {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.auth-container button {
+    font-weight: bold;
+}
