@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Repository = require("../models/repository.js");
 const User = require("../models/user.js");
-const Issue = require("../models/Issue");
+const Issue = require("../models/issue.js");
 
 const renderCreateRepoPage = (req, res) => {
     res.render("repo/newRepo.ejs");
